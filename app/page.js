@@ -12,16 +12,16 @@ import Work from "./_components/Work";
 export default function Home() {
   return (
     <>
-      {/* <Navbar />
-      <Hero /> */}
+      <Navbar />
+      <Hero />
       <Brand />
-      {/* <Service />
+      <Service />
       <NextGen />
       <Owner />
       <Work />
       <Achievements />
       <CustomerReview />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

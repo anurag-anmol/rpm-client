@@ -66,3 +66,66 @@
 
 
 // ----------------Reponsive Web page------------------------
+
+
+
+
+import Link from 'next/link'
+import React from 'react'
+
+function Brand() {
+    return (
+        <section className="py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+            <div className='flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto'>
+                {/* Title */}
+                <div className='mb-6 md:mb-0 md:mr-8'>
+                    <h2 className='text-lg sm:text-xl md:text-2xl font-bold text-muted-foreground whitespace-nowrap'>
+                        Trusted Brands:
+                    </h2>
+                </div>
+
+                {/* Logo Marquee */}
+                <div className='w-full relative overflow-hidden'>
+                    {/* Gradient overlays */}
+                    <div className="absolute left-0 top-0 h-full w-10 bg-gradient-to-r from-[#0c0c1d] to-transparent z-10 pointer-events-none"></div>
+                    <div className="absolute right-0 top-0 h-full w-10 bg-gradient-to-l from-[#0c0c1d] to-transparent z-10 pointer-events-none"></div>
+
+                    {/* Logo container */}
+                    <div className="whitespace-nowrap animate-scroll flex gap-6 md:gap-10 items-center">
+                        {/* Duplicate logos for seamless looping */}
+                        {[...Array(2)].map((_, i) => (
+                            <React.Fragment key={i}>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b302c6e24dd6c8e2a36c_logoipsum-277.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b302600c38d8a2e37b8e_logoipsum-372.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b301e5d8c66a7c24fb4b_logoipsum-340.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b3018022a3f3ce1412f2_logoipsum-364.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b301d68a838143249fa2_logoipsum-363.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b302b8a033c63e5fb504_logoipsum-367.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b3018022a3f3ce14129b_logoipsum-283.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                                <a href="#" className="inline-block px-2">
+                                    <img src="https://cdn.prod.website-files.com/68149cfdae7cc5226d0569ac/6814b302e0891b73475c21f2_logoipsum-369.svg" alt="logo" className="h-8 md:h-10 w-auto" />
+                                </a>
+                            </React.Fragment>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Brand
