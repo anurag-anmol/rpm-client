@@ -140,7 +140,9 @@
 // -----------responsive web page-------------
 
 
+import { Button } from '@/components/ui/button'
 import { LucideTwitter, Twitter } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 function Footer() {
